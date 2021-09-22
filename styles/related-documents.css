@@ -1,0 +1,54 @@
+#episode-menu {
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+#title, #subheading {
+	text-align: center;
+	font-size: 42px;
+	margin-bottom: 50px;
+}
+
+#title {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+footer {
+	position: relative;
+	margin-top: 50px;
+	width: auto;
+}
+
+#social-icons {
+	padding-right: 0;
+	float: right;
+}
+
+.image-gallery img {
+	object-fit: contain;
+	width: 25vmax;
+}
+
+.image-gallery {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.image-item {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.image-item p {
+	text-align: center;
+	width: 25vmax;
+	height: 50px;
+	font-weight: 200;
+}

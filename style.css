@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap');
+
+html,
+body {
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: black;
+}
+
+h1 {
+	font-weight: 400;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	margin: 0;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+header {
+	padding: 30px 40px;
+	display: flex;
+	position: relative;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.25),
+		transparent
+	);
+}
+
+#name {
+	flex-grow: 2;
+}
+
+nav {
+	display: flex;
+	margin-right: 50px;
+	align-items: center;
+}
+
+nav > a,
+#episode-menu a {
+	margin-left: 75px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid transparent;
+	transition: opacity 0.3s, border-color 0.15s;
+}
+
+nav a {
+	cursor: pointer;
+	height: auto;
+}
+
+#audio-dropdown a {
+	transition: opacity 0.3s, border-color 0.15s;
+	padding-bottom: 10px;
+	border-bottom: 2px solid transparent;
+	padding-right: 5px;
+}
+
+#audio-dropdown {
+	margin-bottom: 10px;
+	margin-left: 75px;
+}
+
+#episode-menu {
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: auto;
+	padding: 20px;
+	margin-top: 10px;
+	background-color: rgba(0, 0, 0, 0.25);
+	right: 280px;
+	width: 100px;
+	text-align: end;
+	transition: opacity 0.2s, visibility 0s linear 0.2s;
+}
+
+#episode-menu a {
+	padding: 0;
+	margin-left: 0;
+	width: 100%;
+	font-weight: 200;
+}
+
+nav > a:hover,
+#episode-menu a:hover,
+#audio-dropdown a:hover {
+	opacity: 50%;
+	border-color: white;
+}
+
+#audio-dropdown:hover #episode-menu {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s, 0s;
+}
+
+footer {
+	position: relative;
+	margin-top: 50px;
+	width: auto;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	align-items: center;
+	padding: 10px 40px;
+	height: 50px;
+}
+
+#copyright {
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+#social-icons {
+	padding-right: 0;
+	float: right;
+	margin-left: auto;
+}
+
+#social-icons svg {
+	height: 33px;
+	width: auto;
+	transition: opacity 0.3s;
+	width: auto;
+}
+
+#social-icons a {
+	width: auto;
+	margin-right: 25px;
+}
+
+#social-icons svg:hover {
+	opacity: 0.5;
+}

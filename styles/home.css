@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+#title {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+#summary {
+    font-family: 'Source Sans Pro', 'Oswald', Helvetica, sans-serif;
+    margin: 0 20% 0 20%;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.25);
+    padding: 25px;
+}
+
+#media-player {
+    margin-bottom: 100px !important;
+}
+
+#episodes-subheading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+#episodes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#episodes div {
+    margin: 30px;
+}
+
+.episode-thumbnail {
+    width: 400px;
+    height: 225px;
+    max-width: 400px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+.episode-name {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin: 0;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    padding-left: 15px;
+    transition: color 0.3s;
+}
+
+#episodes div:hover .episode-name {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+#episodes div:hover .episode-thumbnail {
+    opacity: 0.5;
+}
+
+#main-content {
+    height: calc(100vmin - 60px);
+    display: block;
+    position: relative;
+}
+
+#main-content:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -213px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-image: url('../img/background.jpeg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    height: 106vmin;
+}
+
+#background {
+	z-index: -1;
+	opacity: 0.3;
+	position: absolute;
+	left: 0;
+	top: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100vmin;
+}
