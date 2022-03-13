@@ -35,9 +35,8 @@ function togglePlay() {
         const durationTime = document.getElementById('player').duration;
         let durationTimeMinutes = Math.floor(durationTime / 60);
         let durationTimeSeconds = Math.round(durationTime - durationTimeMinutes * 60);
-        if (durationTimeSeconds > 59) {
+        if (durationTimeSeconds == 0) {
             durationTimeSeconds = "00"
-            durationTimeMinutes += 1
         }
         duration.textContent = `${durationTimeMinutes}:${durationTimeSeconds}`;
         playicon.src = "../img/pause.svg"

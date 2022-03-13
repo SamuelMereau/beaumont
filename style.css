@@ -89,6 +89,7 @@ nav a {
 	right: 280px;
 	width: 100px;
 	text-align: end;
+	z-index: 1;
 	transition: opacity 0.2s, visibility 0s linear 0.2s;
 }
 
